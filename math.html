@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>math</title>
+</head>
+<body>
+    <div><input type="number" id="input1"></div>
+    <div><input type="number" id="input2"></div>
+    <button type="submit" onclick="add()">click to add</button>
+    <button type="submit" onclick="multi()">click to multiple</button>
+
+
+    <h1 id="result">Answer:</h1>
+    <script>
+        function add()
+       { let x1=Number(document.getElementById("input1").value)
+        let x2=Number(document.getElementById("input2").value)
+        let sum=x1+x2
+        let process=document.getElementById("result")
+        process.innerHTML=sum}
+        function multi()
+       { let x1=Number(document.getElementById("input1").value)
+        let x2=Number(document.getElementById("input2").value)
+        let sum=x1*x2
+        let process=document.getElementById("result")
+        process.innerHTML=sum}
+
+    </script>
+    
+</body>
+</html>
